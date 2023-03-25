@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: absolute;
+     background-color: rgb(241, 234, 234);
+    padding: 40px;
+    /* width: 434px; */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    padding-left: 5vw;
+}
+.sidebar nav li{
+ list-style: none;
+ font-size: 1.3rem;
+ padding: 33px 0;
+ 
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:  black;
+}
+.container{
+    display: flex;
+    
+    
+}
+.infocontainer{
+    /* background-color: rgb(220, 22, 220); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+font-size: 3em;
+}
+.name{
+ font-size: 3em;
+ font-weight: bold;
+}
+.about{
+font-size: 2em;
+}
+.moreabout{
+    font-size: 1.5em;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+.btn{
+padding: 6px 12px;
+border-radius: 20px;
+font-weight: bold;
+font-size: 1.5em;
+margin: 3px 3px;
+color: white;
+background-color: dodgerblue;
+cursor: pointer;
+}
+.btn:hover{
+    color: dodgerblue;
+background-color: white;
+}
+.btn-sm{
+    font-size: 14px;
+    padding: 5px 5px;
+}
+
+.devpic img{
+    height: 58vh;
+ 
+}
+.contactform{
+    margin: 88px;
+    padding: 0 34px;
+    /* padding-top: 144px; */
+}
+.contactform h1{
+    text-align: start; 
+    padding: 12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 22vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 12px;
+}
+.mb-3 textarea{
+ width: 35vw;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+#emailHelp{
+    padding-top: 5px;
+    padding-bottom: 0;
+font-size: 11px;
+color: midnightblue;
+margin: 0 5px;
+}
+.blogcontainer{
+    margin: 88px;
+}
+.blogitem{
+    margin: 20px;
+}
+.blogcontainer h1{
+    margin: 23px;
+}
+.blogitem p{
+ margin-bottom: 10px;
+}
+.intro{
+    margin: 60px 88px;
+}
+.intro h1{
+    margin:12px;
+}
+.intro p{
+    margin:12px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+.hrd{
+    width:200px;
+     background-color: cadetblue;
+}
+.fifty{
+    width:175px;
+    background-color: blue;
+}
+.t5{
+    width: 150px;
+    background-color: greenyellow;
+}
+.project{
+    margin: 12px;
+}
+.project div{
+    padding: 5px;
+}
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.cross{
+    margin-left: 130px;
+    margin-top: 6px;
+}
+.sidebarGo{
+    transform: translate(-443px,0);
+    position: absolute;
+}
+@media (max-width: 1200px) {
+   .devpic img{
+     height: 30vh;
+   }
+   .contactform form div input{
+    width: 35vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 12px;
+}
+.mb-3 textarea{
+    width: 35vw;
+   }
+   .main{
+    padding-left: 2vw;
+   }
+   .infocontainer{
+    flex-wrap: wrap;
+   }
+   .buttons{
+    font-size: 10px;
+   }
+   .devinfo{
+    font-size: 10px;
+   }
+   .intro,.blogcontainer,.contactform{
+    margin: 50px 8px;
+   }
+  }
+  @media(max-width:500px){
+/* .sidebar{
+    position: static;
+} */
+.devpic img{
+    padding-top: 2vh;;
+    height: 30vh;
+  }
+  .contactform form div input{
+    width: 55vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 12px;
+}
+.mb-3 textarea{
+    width: 50vw;
+   }
+.main{
+    padding-left: 6vw;
+   }
+   .infocontainer{
+    margin-top: 15vh;
+   }
+
+  }
+  
